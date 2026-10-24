@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 270" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes sparkFlicker {
+        0%, 100% { fill: #faec03; opacity: 1; transform: scale(1); }
+        33%      { fill: #ffffff; opacity: 0.9; transform: scale(1.15) translate(1px, -1px); }
+        66%      { fill: #ff7700; opacity: 0.8; transform: scale(0.9) translate(-1px, 1px); }
+      }
+      @keyframes sparkFly {
+        0%   { opacity: 0; transform: translate(0, 0); }
+        50%  { opacity: 1; transform: translate(2px, -3px); fill: #ffffff; }
+        100% { opacity: 0; transform: translate(4px, -6px); fill: #faec03; }
+      }
+      @keyframes eyeGlow {
+        0%, 100% { fill: #3dbbf2; }
+        50%      { fill: #8ce1ff; }
+      }
+      .font-mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        font-size: 11px;
+        font-weight: 900;
+        white-space: pre;
+      }
+      .eye {
+        animation: eyeGlow 2.5s infinite ease-in-out;
+      }
+      .spark {
+        animation: sparkFlicker 0.22s infinite alternate ease-in-out;
+        transform-origin: 430px 140px;
+      }
+      .spark-burst {
+        animation: sparkFly 0.4s infinite ease-out;
+      }
+      .bomb {
+        fill: #010101;
+      }
+      .edge {
+        fill: #851817;
+      }
+      .white {
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+
+  <!-- Crimson Background matching medjedbomb.jpg -->
+  <rect width="540" height="270" rx="10" fill="#c52a28" />
+
+  <!-- ASCII Medjed Bomb Body -->
+  <g class="font-mono" transform="translate(5, 5)">
+    <text x="10" y="20.0">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="31.5">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">..</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">....</tspan><tspan class="bomb">#</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="43.0">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.....</tspan><tspan class="white">WW</tspan><tspan class="bomb">#</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="54.5">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan><tspan class="edge">.</tspan><tspan class="white">W</tspan><tspan class="edge">..</tspan><tspan class="bomb">#</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">....</tspan><tspan class="bomb">###</tspan><tspan class="edge">.....</tspan>&#160;&#160;<tspan class="edge">...</tspan><tspan class="white">WW</tspan><tspan class="edge">..</tspan><tspan class="bomb">##</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="66.0">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan><tspan class="white">WW</tspan><tspan class="edge">.</tspan><tspan class="bomb">##########################</tspan><tspan class="edge">...</tspan><tspan class="bomb">####</tspan><tspan class="edge">..</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="77.5">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">..</tspan><tspan class="bomb">############</tspan><tspan class="edge">...</tspan><tspan class="eye">CC</tspan><tspan class="edge">...</tspan><tspan class="bomb">################</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="89.0">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.</tspan><tspan class="bomb">###########</tspan><tspan class="edge">.</tspan><tspan class="eye">CCCCCCC</tspan><tspan class="edge">.</tspan><tspan class="bomb">###################</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="100.5">&#160;&#160;&#160;&#160;&#160;<tspan class="edge">..</tspan><tspan class="bomb">#########</tspan><tspan class="edge">.</tspan><tspan class="eye">CCCCCCC</tspan><tspan class="edge">.</tspan><tspan class="bomb">##################</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan><tspan class="edge">.</tspan>&#160;&#160;<tspan class="bomb">###</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="112.0">&#160;&#160;&#160;<tspan class="edge">.</tspan><tspan class="eye">C</tspan><tspan class="edge">.</tspan><tspan class="bomb">###</tspan><tspan class="edge">..</tspan><tspan class="bomb">###</tspan><tspan class="eye">CCCCCCCC</tspan><tspan class="bomb">################</tspan><tspan class="edge">.</tspan><tspan class="bomb">####</tspan><tspan class="edge">.</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan><tspan class="edge">.</tspan><tspan class="bomb">#</tspan>&#160;&#160;<tspan class="bomb">#</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="123.5">&#160;&#160;<tspan class="bomb">#</tspan><tspan class="eye">CC</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan><tspan class="eye">C</tspan><tspan class="edge">.</tspan><tspan class="bomb">###</tspan><tspan class="eye">CCCCCCCC</tspan><tspan class="bomb">################</tspan><tspan class="eye">C</tspan><tspan class="bomb">#####</tspan><tspan class="white">WW</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan>&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan>&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="135.0">&#160;<tspan class="bomb">#</tspan><tspan class="eye">CCCCCC</tspan><tspan class="edge">.</tspan><tspan class="bomb">###</tspan><tspan class="edge">.</tspan><tspan class="eye">CCCCCCC</tspan><tspan class="edge">.</tspan><tspan class="bomb">################</tspan><tspan class="eye">C</tspan><tspan class="edge">.</tspan><tspan class="bomb">######</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan>&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan>&#160;&#160;<tspan class="edge">.</tspan>&#160;&#160;<tspan class="spark">**</tspan>&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="146.5">&#160;<tspan class="bomb">#</tspan><tspan class="eye">CCCC</tspan><tspan class="edge">.</tspan><tspan class="bomb">#####</tspan><tspan class="eye">CCCCCCCCC</tspan><tspan class="bomb">##############</tspan><tspan class="edge">.</tspan><tspan class="eye">CC</tspan><tspan class="bomb">########</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan>&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan>&#160;<tspan class="bomb">##</tspan>&#160;&#160;<tspan class="spark">**</tspan><tspan class="edge">...</tspan>&#160;</text>
+    <text x="10" y="158.0"><tspan class="edge">.</tspan><tspan class="bomb">#</tspan><tspan class="edge">...</tspan><tspan class="bomb">#######</tspan><tspan class="edge">.</tspan><tspan class="eye">CCCCCCCCC</tspan><tspan class="bomb">##########</tspan><tspan class="edge">.</tspan><tspan class="eye">CCC</tspan><tspan class="bomb">############</tspan>&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan>&#160;<tspan class="bomb">#</tspan>&#160;<tspan class="edge">.</tspan>&#160;<tspan class="edge">.</tspan><tspan class="spark">**</tspan><tspan class="edge">..</tspan>&#160;</text>
+    <text x="10" y="169.5">&#160;<tspan class="bomb">############</tspan><tspan class="edge">.</tspan><tspan class="eye">CCCCCCCCCC</tspan><tspan class="edge">.....</tspan><tspan class="eye">CCCCC</tspan><tspan class="edge">...</tspan><tspan class="white">W</tspan><tspan class="edge">...</tspan><tspan class="bomb">#######</tspan>&#160;&#160;&#160;<tspan class="edge">.</tspan><tspan class="bomb">#</tspan>&#160;<tspan class="edge">.</tspan>&#160;&#160;<tspan class="edge">..</tspan><tspan class="spark">*</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;</text>
+    <text x="10" y="181.0">&#160;<tspan class="bomb">##############</tspan><tspan class="edge">.</tspan><tspan class="eye">CCCCCCCCCCCCCCC</tspan><tspan class="edge">.</tspan><tspan class="bomb">##</tspan><tspan class="edge">.</tspan><tspan class="white">WWW</tspan><tspan class="edge">..</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan><tspan class="bomb">######</tspan>&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;<tspan class="spark">****</tspan>&#160;&#160;&#160;</text>
+    <text x="10" y="192.5">&#160;&#160;<tspan class="edge">.</tspan><tspan class="bomb">###############</tspan><tspan class="edge">....</tspan><tspan class="eye">CC</tspan><tspan class="edge">....</tspan><tspan class="bomb">###</tspan><tspan class="edge">...</tspan><tspan class="white">W</tspan><tspan class="edge">..</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan><tspan class="white">WW</tspan><tspan class="edge">.</tspan><tspan class="bomb">#####</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.</tspan><tspan class="spark">*</tspan>&#160;<tspan class="edge">..</tspan>&#160;&#160;</text>
+    <text x="10" y="204.0">&#160;&#160;&#160;<tspan class="edge">...</tspan><tspan class="bomb">#</tspan><tspan class="edge">.</tspan><tspan class="bomb">####################</tspan><tspan class="edge">.</tspan><tspan class="white">WWW</tspan><tspan class="edge">.</tspan><tspan class="white">WWW</tspan><tspan class="edge">...</tspan><tspan class="white">W</tspan><tspan class="edge">.</tspan><tspan class="bomb">#####</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="215.5">&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.....</tspan><tspan class="white">WW</tspan><tspan class="edge">.......</tspan><tspan class="bomb">#</tspan><tspan class="edge">.</tspan><tspan class="bomb">#</tspan><tspan class="edge">.</tspan><tspan class="white">WW</tspan><tspan class="edge">..</tspan><tspan class="white">W</tspan><tspan class="edge">..</tspan><tspan class="white">W</tspan><tspan class="edge">..</tspan><tspan class="white">WWWW</tspan><tspan class="edge">.</tspan><tspan class="bomb">######</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="227.0">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="bomb">#</tspan><tspan class="edge">..</tspan><tspan class="bomb">#</tspan><tspan class="edge">..</tspan><tspan class="white">W</tspan><tspan class="edge">..</tspan><tspan class="white">WW</tspan><tspan class="edge">.</tspan><tspan class="bomb">###</tspan><tspan class="edge">.</tspan><tspan class="white">WW</tspan><tspan class="edge">.</tspan><tspan class="bomb">###</tspan><tspan class="edge">..</tspan><tspan class="bomb">#</tspan><tspan class="edge">..</tspan><tspan class="bomb">#######</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="238.5">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">.</tspan><tspan class="bomb">########</tspan><tspan class="edge">....</tspan><tspan class="bomb">##</tspan><tspan class="edge">..</tspan><tspan class="bomb">##########</tspan><tspan class="edge">.</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <text x="10" y="250.0">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan class="edge">..</tspan><tspan class="bomb">###############</tspan><tspan class="edge">..</tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+    <!-- Flying spark particles -->
+    <g class="spark-burst">
+      <text x="448" y="128" fill="#faec03" font-size="13">*</text>
+      <text x="462" y="116" fill="#ffffff" font-size="11">+</text>
+      <text x="456" y="142" fill="#ff7700" font-size="10">.</text>
+    </g>
+  </g>
+</svg>
